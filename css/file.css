@@ -1,22 +1,14 @@
 body{
     margin: 0px;
 }
+
 .container{
     width: 1170px;
     margin: 0 auto;
-    position: relative;
-}
-h2{
-    color: #261D4B;
-    font-size: 52px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: lighter;
-    margin-top: 0x;
-    text-align: right;
 }
 
 header{
-    padding: 17px 0;
+    padding: 17px 0 18px 0;
     margin: 0 auto;
     width: 100%;
     z-index: 1;
@@ -24,9 +16,10 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    background-color: wheat;
 }
 
-a{
+header a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -34,7 +27,7 @@ a{
     padding: 34px 15px;
 }
 
-a:hover{
+header a:hover{
     background-color: #4DAEB2;
     color: #FFFFFF;
 }
@@ -55,14 +48,13 @@ nav{
     text-align: right;
 }
 
-ul{
+nav ul{
     list-style-type: none;
     display: inline-block;
 }
 
-li{
+nav ul li{
     display: inline;
-    margin-left: 31px;
 }
 
 li:hover{
@@ -75,23 +67,189 @@ h1{
     font-weight: lighter;
     margin: 0;
 }
-
-.outer-middle .container-fluid{
-    position: relative;
+/* --------------------------------  outer-middle starts --------------------------------------------------------- */
+.outer-middle{
+    padding-top: 86.3333px;
     text-align: center;
 }
 
-#tvimage{
-    position: absolute;
-    top: 23px;
-    right: 0px;
+.outer-middle .container{
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 4px 10px #DED9F9;
+    display: inline-block;
+    width: 1170px;
 }
 
+.tv-side-heading
+{
+    float:right;
+    text-align: right;
+    margin-top:95px;
+    margin-right: 88px;
+    width: 650px;
+}
+
+.tv-side-heading h2{
+    color: #261D4B;
+    font-size: 52px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    margin: 0px;
+    text-align: right;
+}
+
+.tv-side-heading p{
+    text-align: right;
+    font-family:'Montserrat', sans-serif;
+    font-weight: lighter; 
+    font-size: 20px;
+    color: #726F7A;
+}
+
+.tv-side-heading a{
+    color: #28282E;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: #82D7DB;
+    transform:skew(-20deg);
+    padding: 15px 21px;
+    border-radius: 5px;
+}
+
+.tv-image{
+    float: right;
+    height:552px;
+    width:432px;
+}
+
+.tv-image img{
+    position: absolute;
+    top:23px;
+    right:0px;
+} 
+/* --------------------------------  outer-middle ends  ---------------------------------------- */
+
+
+/* -------------------------------- third starts ----------------------------------------------- */
 .third{
     clear: both;
     text-align: center;
     padding-top: 23px;
 }
+
+.third h2{
+    color: #261D4B;
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.third p{
+    color: #726F7A;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.images{
+    display: inline-block;
+}
+
+.images p{
+    margin: 0px;
+    font-size: 26px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.back-image{
+    background-image: url("../images/polygon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 136px;
+    height: 154px;
+    float: left;
+    margin: 0px 32px;
+}
+
+.back-image img{
+    padding-top: 26px;
+}
+
+/* .image1 img{
+    padding-top: 28px;
+}
+
+.image2 img{
+    padding-top: 28px;
+}
+
+.image3 img{
+    padding-top: 28px;
+}
+
+.image4 img{
+    padding-top: 28px;
+} */
+
+/* .image1{
+    background-image: url("../images/build.png");
+}
+
+.image2{
+    background-image: url("../images/manage.png");
+}
+
+.image3{
+    background-image: url("../images/monitor.png");
+}
+
+.image4{
+    background-image: url("../images/report.png");
+} */
+/* ----------------------------- third ends ------------------------------------------- */
+
+.last img{
+    text-align: right;
+}
+
+.image5{
+    background-image: url("./images/business-background.png");
+    widows: 229px;
+    height: 258px;
+}
+
+.image6{
+    background-image: url("./images/appdev-background.png");
+    widows: 229px;
+    height: 258px;
+}
+
+.image7{
+    background-image: url("./images/itops-background.png");
+    widows: 229px;
+    height: 258px;
+}
+/* ------------------------------------------------------------------------ */
+.last{
+    /* width: 640px; */
+    text-align: center;
+    clear: both;
+}
+
+.last h2{
+    text-align: center;
+    margin: auto;
+}
+
+video{
+    margin-bottom: 31px;
+}
+
 
 footer{
     background-color: #2A2735;
