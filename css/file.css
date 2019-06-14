@@ -1,0 +1,107 @@
+body{
+    margin: 0px;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+h2{
+    color: #261D4B;
+    font-size: 52px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    margin-top: 0x;
+    text-align: right;
+}
+
+header{
+    padding: 17px 0;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #261D4B;
+    padding: 34px 15px;
+}
+
+a:hover{
+    background-color: #4DAEB2;
+    color: #FFFFFF;
+}
+
+#loginmenu{
+    color: #4DAEB2;
+}
+
+#loginmenu:hover{
+    color: #FFFFFF;
+}
+
+#logo{
+    float: left;
+}
+
+nav{
+    text-align: right;
+}
+
+ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+li{
+    display: inline;
+    margin-left: 31px;
+}
+
+li:hover{
+    background-color: #4DAEB2;
+}
+
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 52px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.outer-middle .container-fluid{
+    position: relative;
+    text-align: center;
+}
+
+#tvimage{
+    position: absolute;
+    top: 23px;
+    right: 0px;
+}
+
+.third{
+    clear: both;
+    text-align: center;
+    padding-top: 23px;
+}
+
+footer{
+    background-color: #2A2735;
+    font-family: 'Montserrat', sans-serif;
+    color: #A5A5A5;
+    font-size: 13px;
+    text-align: left;
+    height: 50px;
+}
+
+.footerdiv{
+    text-align: right;
+}
