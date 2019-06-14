@@ -16,7 +16,6 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background-color: wheat;
 }
 
 header a{
@@ -137,6 +136,7 @@ h1{
     clear: both;
     text-align: center;
     padding-top: 23px;
+    margin-bottom: 52px;
 }
 
 .third h2{
@@ -180,77 +180,118 @@ h1{
     padding-top: 26px;
 }
 
-/* .image1 img{
-    padding-top: 28px;
+.third-last{
+    display: inline-block;
+    background-color: lightcoral;
+    /* margin: 56px 30px 30px 30px; */
 }
 
-.image2 img{
-    padding-top: 28px;
+.third-last img{
+    float: right;  
 }
 
-.image3 img{
-    padding-top: 28px;
+.third-last-left{
+    display: inline-block;
+    text-align: left;
+    /* margin-right: 53px; */
+    width: 500px;
 }
 
-.image4 img{
-    padding-top: 28px;
-} */
-
-/* .image1{
-    background-image: url("../images/build.png");
-}
-
-.image2{
-    background-image: url("../images/manage.png");
-}
-
-.image3{
-    background-image: url("../images/monitor.png");
-}
-
-.image4{
-    background-image: url("../images/report.png");
-} */
 /* ----------------------------- third ends ------------------------------------------- */
+
+/* ------------------------------------ fourth starts ---------------------------------------------- */
 
 .last img{
     text-align: right;
 }
 
-.image5{
-    background-image: url("./images/business-background.png");
-    widows: 229px;
+.image5, .image6, .image7{
+    background-image: url("../images/bigpolygon.png");
+    width: 229px;
     height: 258px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.fourth-images{
+    display: inline-block;
+}
+
+.fourth-images .image7 h6{
+    margin: 0;
 }
 
 .image6{
-    background-image: url("./images/appdev-background.png");
-    widows: 229px;
-    height: 258px;
+    margin: 0 135px;
 }
 
-.image7{
-    background-image: url("./images/itops-background.png");
-    widows: 229px;
-    height: 258px;
+.fourth-images .image5 h5{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin: 40px 0px 42px 0px;
 }
-/* ------------------------------------------------------------------------ */
+
+.fourth-images .image6 h5{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin: 40px 0px 26px 0px;
+}
+
+.fourth-images .image7 h5{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin: 42px 0px 25px 0px;
+}
+
+.fourth-images h6{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.fourth{
+    text-align: center;
+    margin-top: 52px;
+    padding-bottom: 64px;
+}
+
+.fourth h2{
+    color: #261B4A;
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    padding-top: 34px;
+    margin: 0 0 59px 0;
+}
+
+/* ------------------------------------ fourth ends ---------------------------------------------- */
+
+/* ------------------------- last starts ----------------------------------------------- */
 .last{
     /* width: 640px; */
     text-align: center;
     clear: both;
+    margin: 38px 0px 31px 0px;
 }
 
 .last h2{
     text-align: center;
-    margin: auto;
+    margin: 0 0 19px 0;
+    color: #261B4A;
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
 }
-
-video{
-    margin-bottom: 31px;
-}
-
-
+/* -------------------------- last ends --------------------------------------------------- */
 footer{
     background-color: #2A2735;
     font-family: 'Montserrat', sans-serif;
