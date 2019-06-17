@@ -16,6 +16,8 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    background-color: white;
+    text-align: center;
 }
 
 header a{
@@ -26,25 +28,34 @@ header a{
     padding: 34px 15px;
 }
 
+header .container{
+    display: inline-block;
+}
+
 header a:hover{
     background-color: #4DAEB2;
     color: #FFFFFF;
 }
 
-#loginmenu{
-    color: #4DAEB2;
-}
-
-#loginmenu:hover{
+.homebutton a{
+    background-color: #4DAEB2;
     color: #FFFFFF;
 }
 
-#logo{
+.loginmenu{
+    color: #4DAEB2;
+}
+
+.loginmenu:hover{
+    color: #FFFFFF;
+}
+
+.logo{
     float: left;
 }
 
 nav{
-    text-align: right;
+    float: right;
 }
 
 nav ul{
@@ -53,7 +64,7 @@ nav ul{
 }
 
 nav ul li{
-    display: inline;
+    float: left;
 }
 
 li:hover{
@@ -70,23 +81,31 @@ h1{
 .outer-middle{
     padding-top: 86.3333px;
     text-align: center;
+    box-shadow: 0px 4px 10px #DED9F9;
 }
 
 .outer-middle .container{
     position: relative;
     text-align: center;
-    box-shadow: 0px 4px 10px #DED9F9;
+    /* box-shadow: 0px 4px 10px #DED9F9; */
     display: inline-block;
     width: 1170px;
 }
 
+.outer-middle .container img{
+    position: absolute;
+    right: 0px;
+    top: 23px;
+}
+
 .tv-side-heading
 {
-    float:right;
+    float:left;
     text-align: right;
     margin-top:95px;
     margin-right: 88px;
     width: 650px;
+    margin-bottom: 100px;
 }
 
 .tv-side-heading h2{
@@ -115,19 +134,13 @@ h1{
     transform:skew(-20deg);
     padding: 15px 21px;
     border-radius: 5px;
-}
-
-.tv-image{
     float: right;
-    height:552px;
-    width:432px;
 }
 
-.tv-image img{
-    position: absolute;
-    top:23px;
-    right:0px;
-} 
+.tv-side-heading div{
+    width: 100%;
+}
+
 /* --------------------------------  outer-middle ends  ---------------------------------------- */
 
 
@@ -135,7 +148,7 @@ h1{
 .third{
     clear: both;
     text-align: center;
-    padding-top: 23px;
+    padding-top: 106px;
     margin-bottom: 52px;
 }
 
@@ -148,11 +161,13 @@ h1{
     margin-bottom: 30px;
 }
 
-.third p{
+.third-p{
     color: #726F7A;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 60px;
 }
 
 .images{
@@ -164,26 +179,73 @@ h1{
     font-size: 26px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+    color: #FFFFFF;
 }
 
 .back-image{
     background-image: url("../images/polygon.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 136px;
-    height: 154px;
+    width: 154px;
+    height: 171px;
     float: left;
     margin: 0px 32px;
 }
 
+.back-image:hover{
+    background-image: url("../images/hover.png");
+    width: 154px;
+    height: 171px;
+}
+
+.images div:nth-child(1):active{
+    background-image: url("../images/hover.png");
+    width: 154px;
+    height: 171px;
+}
+
+.third-last p{
+    color: #615F67;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.third-last::before{
+    content: "";
+    height: 50px;
+    width: 50px;
+    margin-top: -57px;
+    position: absolute;
+    transform: rotate(45deg);
+    border: 2px solid #DCDCDC;
+    margin-left: 140px;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    background-color: white;
+}
+
 .back-image img{
-    padding-top: 26px;
+    padding-top: 34px;
+    margin-bottom: 12px;
 }
 
 .third-last{
     display: inline-block;
-    background-color: lightcoral;
-    /* margin: 56px 30px 30px 30px; */
+    padding: 30px;
+    border: 1px solid #DCDCDC;
+    margin: 40px 58px;
+}
+.third-last div{
+    margin-right: 49px;
+}
+
+.third-last ul{
+    color: #615F67;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-left: 15px;
 }
 
 .third-last img{
@@ -193,8 +255,7 @@ h1{
 .third-last-left{
     display: inline-block;
     text-align: left;
-    /* margin-right: 53px; */
-    width: 500px;
+    width: 445px;
 }
 
 /* ----------------------------- third ends ------------------------------------------- */
@@ -218,12 +279,20 @@ h1{
     display: inline-block;
 }
 
-.fourth-images .image7 h6{
-    margin: 0;
+.imagesinimage5{
+    margin-top: 42px;
+}
+
+.imagesinimage5 img:nth-child(2){
+    margin: 0 17px 0 14px;
 }
 
 .image6{
     margin: 0 135px;
+}
+
+.image6 .image6-1,.image6-2, .image6-3{
+    float: left;
 }
 
 .fourth-images .image5 h5{
@@ -234,12 +303,32 @@ h1{
     margin: 40px 0px 42px 0px;
 }
 
+.imagesinimage6{
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
 .fourth-images .image6 h5{
     color: #FFFFFF;
     font-size: 22px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     margin: 40px 0px 26px 0px;
+}
+
+.image6-2{
+    border-right: 1px solid #7ECED2;
+    border-left: 1px solid #7ECED2;
+    padding: 0 5px 0 5px;
+    margin: 0px 6px;
+}
+
+.image6 p{
+    color: #8ADCDB;
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin: 0 0 5px 0;
 }
 
 .fourth-images .image7 h5{
@@ -250,18 +339,43 @@ h1{
     margin: 42px 0px 25px 0px;
 }
 
+.imagesinimage7 img:nth-child(1){
+    margin-right: 24px;
+    margin-bottom: 10px;
+}
+
+.imagesinimage7{
+    margin-bottom: 10px;
+}
+
+.imagesinimage5{
+    margin-bottom: 20px;
+}
+
 .fourth-images h6{
     color: #FFFFFF;
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .fourth{
     text-align: center;
-    margin-top: 52px;
-    padding-bottom: 64px;
+    background-color: #F7F7FB;
+    padding-bottom: 65px;
+}
+
+.fourth::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    transform: rotate(45deg);
+    border: 1px solid #DCDCDC;
+    margin-left: -25px;
+    border-left: transparent;
+    border-top: transparent;
 }
 
 .fourth h2{
@@ -269,7 +383,6 @@ h1{
     font-size: 40px;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
-    padding-top: 34px;
     margin: 0 0 59px 0;
 }
 
@@ -298,9 +411,35 @@ footer{
     color: #A5A5A5;
     font-size: 13px;
     text-align: left;
-    height: 50px;
+    width: 100%;
 }
 
-.footerdiv{
-    text-align: right;
+.right-footer{
+    float: right;
+    margin-top: 20px;
+}
+
+footer p{
+    display: inline-block;
+    margin: 30px 0px;
+}
+
+.right-footer div{
+    display: inline-block;
+    text-align: center;
+    background-image: url("../images/footer-background.svg");
+    width: 33px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 5px;
+}
+
+.right-footer a{
+    color: white;
+    padding: 10px 6px;
+}
+
+.right-footer i{
+    padding-top: 10px;
 }
