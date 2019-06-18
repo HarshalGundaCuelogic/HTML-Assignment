@@ -91,11 +91,10 @@ h1{
 .tv-side-heading
 {
     float:left;
-    text-align: right;
-    margin-top:95px;
-    margin-right: 88px;
-    width: 650px;
+    margin-top: 96px;
+    width: 672px;
     margin-bottom: 100px;
+    text-align: right;
 }
 
 .tv-side-heading h2{
@@ -103,16 +102,25 @@ h1{
     font-size: 52px;
     font-family: 'Rubik', sans-serif;
     font-weight: lighter;
-    margin: 0px;
-    text-align: right;
+    line-height: 58px;
+    margin-bottom: 24px;
 }
 
 .tv-side-heading p{
-    text-align: right;
     font-family:'Montserrat', sans-serif;
-    font-weight: lighter; 
+    font-weight: 300; 
     font-size: 20px;
     color: #726F7A;
+    line-height: 26px;
+}
+
+.tv-side-heading a p{
+    transform: skew(20deg);
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400; 
+    font-size: 18px;
+    color: #28282E;
+    line-height: 26px;
 }
 
 .tv-side-heading a{
@@ -122,10 +130,11 @@ h1{
     text-decoration: none;
     background-color: #82D7DB;
     transform:skew(-20deg);
-    padding: 15px 21px;
+    padding: 15px 21px 13px;
     border-radius: 5px;
     float: right;
     text-transform: none; 
+    margin: 20px 10px 0px 0px;
 }
 
 .tv-side-heading div{
@@ -139,8 +148,8 @@ h1{
 .third{
     clear: both;
     text-align: center;
-    padding-top: 106px;
-    margin-bottom: 52px;
+    margin-top: 106px;
+    line-height: 26px;
 }
 
 .third h2{
@@ -148,8 +157,8 @@ h1{
     font-size: 40px;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
-    margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
+    /* line-height: 26px; */
 }
 
 .third-p{
@@ -158,22 +167,17 @@ h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
-.images{
-    display: inline-block;
-    position: relative;
-}
-
-hr{
+/* hr{
     position: absolute;
     width: 517px;
     z-index: -1;
     left: 177px;
     margin-top: 90px;
     color: #C7E3E3;
-}
+} */
 
 .images p{
     margin: 0px;
@@ -358,13 +362,14 @@ hr{
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
 }
 
 .fourth{
     text-align: center;
     background-color: #F7F7FB;
-    padding-bottom: 65px;
+    padding-bottom: 64px;
+    position: relative;
 }
 
 .fourth::after{
@@ -419,16 +424,16 @@ footer{
 
 .right-footer{
     float: right;
-    margin-top: 20px;
 }
 
-footer p{
+footer span{
     display: inline-block;
     margin: 30px 0px;
+    line-height: 26px;
 }
 
-.right-footer div{
-    display: inline-block;
+.right-footer .icons{
+    float: left;
     text-align: center;
     background-image: url("../images/footer-background.svg");
     width: 33px;
@@ -438,9 +443,14 @@ footer p{
     margin-left: 5px;
 }
 
+.right-footer div:nth-child(6){
+    background-image: none;
+}
+
 .right-footer a{
     color: white;
     padding: 10px 6px;
+    line-height: 26px;
 }
 
 .right-footer i{
