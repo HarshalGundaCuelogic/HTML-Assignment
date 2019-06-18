@@ -9,16 +9,16 @@ body{
 
 header{
     padding: 17px 0 10px 0;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 100%;
     z-index: 1;
     position: fixed;
-    top: 0;
+    /* top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     background-color: white;
     text-align: center;
-    border: 1px solid #F1EFFD;
+    box-shadow: 0px 1px #F1EFFD;
 }
 
 header a{
