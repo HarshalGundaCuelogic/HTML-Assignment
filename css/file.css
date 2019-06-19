@@ -193,7 +193,7 @@ nav ul li{
     width: 70%;
     background-color: #C7E3E3;
     z-index: -1;
-    bottom: 77px;
+    bottom: 85px;
     left: 15%;
 }
 
@@ -255,7 +255,7 @@ nav ul li{
     top: -22px;
     transform: rotate(45deg);
     border: 1px solid #DCDCDC;
-    left: 170px;
+    left: 173px;
     border-right-color: transparent;
     border-bottom-color: transparent;
     background-color: white;
@@ -342,7 +342,7 @@ nav ul li{
     margin: 0 135px;
 }
 
-.imagesinimage6 .image6-1,.image6 .image6-2,.image6 .image6-3{
+.image6-1,.image6-2,.image6-3{
     display: inline-block;
     vertical-align: top;
 }
@@ -358,7 +358,7 @@ nav ul li{
     margin: 0px 6px;
 }
 
-.image6 p{
+.imagesinimage6 p{
     color: #8ADCDB;
     font-size: 12px;
     font-family: 'Rubik', sans-serif;
@@ -384,8 +384,7 @@ nav ul li{
 .last{
     /* width: 640px; */
     text-align: center;
-    clear: both;
-    margin: 38px 0px 31px 0px;
+    margin: 50px 0px 31px 0px;
 }
 
 video{
@@ -404,7 +403,7 @@ footer{
 
 .right-footer{
     float: right;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 footer span{
@@ -416,14 +415,13 @@ footer span{
 }
 
 .right-footer .icons{
-    float: left;
+    display: inline-block;
     text-align: center;
     background-image: url("../images/footer-background.svg");
     width: 33px;
     height: 36px;
     background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 5px;
+    background-position: center center;
 }
 
 .right-footer div:nth-child(6){
@@ -432,10 +430,7 @@ footer span{
 
 .right-footer a{
     color: white;
-    padding: 10px 6px;
+    padding: 5px 10px;
     line-height: 26px;
-}
-
-.right-footer i{
     display: inline-block;
 }
