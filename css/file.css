@@ -1,6 +1,7 @@
 /* ------------------- universal -------------------- */
 body{
     margin: 0px;
+    line-height: 0px;
 }
 
 *{
@@ -106,6 +107,7 @@ nav ul li{
     padding-top: 88px;
     text-align: center;
     box-shadow: 0px 4px 10px #DED9F9;
+    background-color: #FAF9FF
 }
 
 .outer-middle .container{
@@ -188,14 +190,11 @@ nav ul li{
 .images span{
     position: absolute;
     height: 1px;
-    width: 100%;
+    width: 70%;
     background-color: #C7E3E3;
     z-index: -1;
     bottom: 77px;
-}
-
-.images div:nth-child(even), .images div:nth-child(3){
-    margin-right: 64px;
+    left: 15%;
 }
 
 .images p{
@@ -210,26 +209,27 @@ nav ul li{
 .back-image{
     background-image: url("../images/polygon.png");
     /* background-size: cover; */
-    background-position: center;
+    background-position: center 7px;
     background-repeat: no-repeat;
-    width: 136px;
-    height: 154px;
-    display:inline-block;
+    width: 154px;
+    height: 171px;
+    display: inline-block;
+    margin: 0px 32px;
+}
+
+.back-image:hover{
+    background-image: url("../images/hover.png");
+    background-position: center 0px;
+}
+
+.images .back-image:nth-child(2){
+    background-image: url("../images/hover.png");
+    background-position: center 0px;
 }
 
 .back-image img{
     margin-top: 33px;
     margin-bottom: 12px;
-}
-
-.back-image:hover{
-    background-image: url("../images/hover.png");
-    background-position-y: 40%;
-}
-
-.images .back-image:nth-child(2){
-    background-image: url("../images/hover.png");
-    background-position-y: 40%;
 }
 
 .third-last-left p{
@@ -252,10 +252,10 @@ nav ul li{
     content: "";
     height: 40px;
     width: 40px;
-    margin-top: -51px;
+    top: -22px;
     transform: rotate(45deg);
     border: 1px solid #DCDCDC;
-    left: 18.8%;
+    left: 170px;
     border-right-color: transparent;
     border-bottom-color: transparent;
     background-color: white;
@@ -411,6 +411,8 @@ footer span{
     display: inline-block;
     margin: 30px 0px;
     line-height: 26px;
+    font-size: 13px;
+    color: #A5A5A5;
 }
 
 .right-footer .icons{
@@ -435,5 +437,5 @@ footer span{
 }
 
 .right-footer i{
-    margin-top: 10px;
+    display: inline-block;
 }
