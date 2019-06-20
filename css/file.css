@@ -1,0 +1,434 @@
+/* ------------------- universal -------------------- */
+body{
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 1px #F1EFFD;
+}
+
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 58px;
+    color: red;
+}
+
+h2{
+    color: #261D4B;
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+h5{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    line-height: 26px;
+}
+
+h6{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+header a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #261D4B;
+    padding: 31px 15px 31px 15px;
+    line-height: 26px;
+    display: inline-block;
+}
+
+header a:hover{
+    background-color: #4DAEB2;
+    color: #FFFFFF;
+}
+
+.homebutton a{
+    background-color: #4DAEB2;
+    color: #FFFFFF;
+}
+
+/* .homebutton:active{
+    background-color: #4DAEB2;
+} */
+
+.loginmenu{
+    color: #4DAEB2;
+}
+
+.logo{
+    float: left;
+    margin-top: 19px;
+}
+
+header nav{
+    float: right;
+}
+
+nav ul li{
+    float: left;
+}
+
+/* --------------------------------  outer-middle starts --------------------------------------------------------- */
+.outer-middle{
+    padding-top: 88px;
+    text-align: center;
+    box-shadow: 0px 4px 10px #DED9F9;
+    background-color: #FAF9FF
+}
+
+.outer-middle .container{
+    position: relative;
+}
+
+.outer-middle .container img{
+    position: absolute;
+    right: 0px;
+    top: 23px;
+}
+
+.tv-side-heading
+{
+    float:left;
+    margin-top: 96px;
+    width: 672px;
+    margin-bottom: 100px;
+    text-align: right;
+}
+
+.tv-side-heading p{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 300; 
+    font-size: 20px;
+    color: #726F7A;
+    line-height: 26px;
+    margin-top: 24px;
+}
+
+.tv-side-heading a span{
+    transform: skew(20deg);
+    display: inline-block;
+}
+
+.tv-side-heading a{
+    color: #28282E;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: #82D7DB;
+    transform:skew(-20deg);
+    padding: 15px 21px 13px;
+    border-radius: 5px;
+    float: right;
+    text-transform: none; 
+    margin: 24px 10px 35px 0px;
+    line-height: 26px;
+}
+
+/* --------------------------------  outer-middle ends  ---------------------------------------- */
+
+
+/* -------------------------------- third starts ----------------------------------------------- */
+.third{
+    clear: both;
+    text-align: center;
+    margin-top: 106px;
+    margin-bottom: 52px;
+}
+
+.third-p{
+    color: #726F7A;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 31px 0px 40px;
+    line-height: 26px;
+}
+
+.images{
+    display: inline-block;
+    position: relative;
+}
+
+.images div:nth-child(1){
+    position: relative;
+}
+
+.images div:nth-child(1)::after{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    transform: rotate(45deg);
+    border: 1px solid #DCDCDC;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    background-color: white;
+    bottom: -52px;
+    left: 37%;
+}
+
+.images span{
+    position: absolute;
+    height: 1px;
+    width: 70%;
+    background-color: #C7E3E3;
+    z-index: -1;
+    bottom: 85px;
+    left: 15%;
+}
+
+.images p{
+    margin: 0px;
+    font-size: 26px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 26px;
+}
+
+.back-image{
+    background-image: url("../images/polygon.png");
+    /* background-size: cover; */
+    background-position: center 7px;
+    background-repeat: no-repeat;
+    width: 154px;
+    height: 171px;
+    display: inline-block;
+    margin: 0px 32px;
+}
+
+.back-image:hover{
+    background-image: url("../images/hover.png");
+    background-position: center 0px;
+}
+
+.images div:nth-child(1){
+    background-image: url("../images/hover.png");
+    background-position: center 0px;
+}
+
+.back-image img{
+    margin-top: 33px;
+    margin-bottom: 12px;
+}
+
+.third-last-left p{
+    color: #615F67;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.third-last{
+    padding: 30px;
+    border: 1px solid #DCDCDC;
+    margin: 30px 58px 0px;
+}
+
+.third-last ul{
+    color: #615F67;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-left: 15px;
+    line-height: 26px;
+    list-style-type: disc;
+    margin-top: 10px;
+}
+
+.third-last img{
+    float: right;  
+}
+
+.third-last-left{
+    float: left;
+    text-align: left;
+    width: 445px;
+}
+
+/* ----------------------------- third ends ------------------------------------------- */
+
+/* ------------------------------------ fourth starts ---------------------------------------------- */
+.fourth{
+    text-align: center;
+    background-color: #F7F7FB;
+    /* margin-top: 52px; */
+    padding: 34px 0px 64px;
+    position: relative;
+}
+
+.fourth::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    transform: rotate(45deg);
+    border: 1px solid #DCDCDC;
+    left: 50%;
+    border-left: transparent;
+    border-top: transparent;
+    background-color: #F7F7FB;
+    bottom: -25px;
+    margin-left: -25px;
+}
+
+.last img{
+    text-align: right;
+}
+
+.fourth-images{
+    margin-top: 59px;
+    display: inline-block;
+}
+
+.image5, .image6, .image7{
+    background-image: url("../images/bigpolygon.png");
+    width: 229px;
+    height: 258px;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.imagesinimage5{
+    margin-top: 42px;
+    margin-bottom: 20px;
+}
+
+.imagesinimage5 img{
+    vertical-align: middle;
+}
+
+.imagesinimage5 img:nth-child(2){
+    margin: 0 17px 0 14px;
+}
+
+.image6{
+    margin: 0 135px;
+}
+
+.image6-1,.image6-2,.image6-3{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagesinimage6{
+    margin: 26px 0px 14px;
+}
+
+.image6-2{
+    border-right: 1px solid #7ECED2;
+    border-left: 1px solid #7ECED2;
+    padding: 0 5px;
+}
+
+.imagesinimage6 p{
+    color: #8ADCDB;
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.imagesinimage7{
+    margin: 25px 0px 20px;
+}
+
+.imagesinimage7 img{
+    vertical-align: middle;
+}
+
+.imagesinimage7 img:nth-child(1){
+    margin-right: 24px;
+}
+
+/* ------------------------------------ fourth ends ---------------------------------------------- */
+
+/* ------------------------- last starts ----------------------------------------------- */
+.last{
+    /* width: 640px; */
+    text-align: center;
+    margin: 50px 0px 31px 0px;
+}
+
+video{
+    margin-top: 19px;
+}
+
+/* -------------------------- last ends --------------------------------------------------- */
+footer{
+    background-color: #2A2735;
+    font-family: 'Montserrat', sans-serif;
+    color: #A5A5A5;
+    font-size: 13px;
+    text-align: left;
+    width: 100%;
+}
+
+.right-footer{
+    float: right;
+    margin-top: 20px;
+}
+
+footer span{
+    display: inline-block;
+    margin: 25px 0px;
+    line-height: 26px;
+    font-size: 13px;
+    color: #A5A5A5;
+}
+
+.right-footer .icons{
+    display: inline-block;
+    text-align: center;
+    background-image: url("../images/footer-background.svg");
+    width: 33px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.right-footer div:nth-child(6){
+    background-image: none;
+}
+
+.right-footer a{
+    color: white;
+    padding: 5px 10px;
+    line-height: 26px;
+    display: inline-block;
+}
