@@ -300,11 +300,12 @@ nav ul li{
     position: absolute;
     transform: rotate(45deg);
     border: 1px solid #DCDCDC;
-    left: 48%;
+    left: 50%;
     border-left: transparent;
     border-top: transparent;
     background-color: #F7F7FB;
     margin-top: 38px;
+    margin-left: -25px;
 }
 
 .last img{
