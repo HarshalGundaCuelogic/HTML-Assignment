@@ -1,7 +1,6 @@
 /* ------------------- universal -------------------- */
 body{
     margin: 0px;
-    line-height: 0px;
 }
 
 *{
@@ -140,11 +139,6 @@ nav ul li{
 
 .tv-side-heading a span{
     transform: skew(20deg);
-    font-family:'Montserrat', sans-serif;
-    font-weight: 400; 
-    font-size: 18px;
-    color: #28282E;
-    line-height: 26px;
     display: inline-block;
 }
 
@@ -160,6 +154,7 @@ nav ul li{
     float: right;
     text-transform: none; 
     margin: 24px 10px 35px 0px;
+    line-height: 26px;
 }
 
 /* --------------------------------  outer-middle ends  ---------------------------------------- */
@@ -185,6 +180,24 @@ nav ul li{
 .images{
     display: inline-block;
     position: relative;
+}
+
+.images div:nth-child(1){
+    position: relative;
+}
+
+.images div:nth-child(1)::after{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    transform: rotate(45deg);
+    border: 1px solid #DCDCDC;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    background-color: white;
+    bottom: -52px;
+    left: 37%;
 }
 
 .images span{
@@ -222,7 +235,7 @@ nav ul li{
     background-position: center 0px;
 }
 
-.images .back-image:nth-child(2){
+.images div:nth-child(1){
     background-image: url("../images/hover.png");
     background-position: center 0px;
 }
@@ -244,21 +257,6 @@ nav ul li{
     padding: 30px;
     border: 1px solid #DCDCDC;
     margin: 30px 58px 0px;
-    position: relative;
-}
-
-.third-last::before{
-    position: absolute;
-    content: "";
-    height: 40px;
-    width: 40px;
-    top: -22px;
-    transform: rotate(45deg);
-    border: 1px solid #DCDCDC;
-    left: 173px;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    background-color: white;
 }
 
 .third-last ul{
@@ -304,7 +302,7 @@ nav ul li{
     border-left: transparent;
     border-top: transparent;
     background-color: #F7F7FB;
-    margin-top: 38px;
+    bottom: -25px;
     margin-left: -25px;
 }
 
@@ -355,8 +353,7 @@ nav ul li{
 .image6-2{
     border-right: 1px solid #7ECED2;
     border-left: 1px solid #7ECED2;
-    padding: 0 5px 0 5px;
-    margin: 0px 6px;
+    padding: 0 5px;
 }
 
 .imagesinimage6 p{
@@ -364,7 +361,7 @@ nav ul li{
     font-size: 12px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
-    margin: 0 0 5px 0;
+    line-height: 26px;
 }
 
 .imagesinimage7{
@@ -404,12 +401,12 @@ footer{
 
 .right-footer{
     float: right;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 footer span{
     display: inline-block;
-    margin: 30px 0px;
+    margin: 25px 0px;
     line-height: 26px;
     font-size: 13px;
     color: #A5A5A5;
